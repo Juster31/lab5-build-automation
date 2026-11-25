@@ -1,0 +1,30 @@
+{
+  "name": "@sergievich/lab5",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "lab 5 5 5 5",
+  "author": "Sergievich kv, 24 st",
+  "main": "index.js",
+  "bin": "index.js",
+  "private": true,
+  "keywords": [],
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "joi": "^18.3.2",
+    "pino": "^8.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.10",
+    "pkg": "^5.8.1",
+    "rimraf": "^6.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "pkg . --targets node18-win-x64 --output dist/app.exe",
+    "start": "node index.js",
+    "test": "node --test test/app.test.js"
+  }
+}
