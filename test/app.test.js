@@ -8,7 +8,7 @@ test('валидация проходит при корректных данны
         version: Joi.string().required(),
     });
     const { error } = schema.validate({ name: 'lab5', version: '1.0.0' });
-    assert.strictEqual(error, 'это специально сломанный тест');
+    assert.strictEqual(error, undefined);
 });
 
 test('валидация падает без поля name', () => {
