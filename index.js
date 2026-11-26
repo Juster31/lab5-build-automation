@@ -8,7 +8,7 @@ const schema = Joi.object({
     version: Joi.string().required(),
 });
 
-const data = { name: 'lab5', version: '1.0.0-SNAPSHOT' };
+const data = { name: 'lab55', version: '1.0.0-SNAPSHOT' };
 const { error, value } = schema.validate(data);
 
 if (error) {
